@@ -7,161 +7,45 @@ include menu
 article#presentation
 
 	section
-		h1 User Stories
-		p Teknologi Kolaborasi Pengembangan Perangkat Lunak
+		h1 Windows 95
 
 	section
-		h2.bullet Tujuan Pembelajaran
-		hr
+		p Windows 95 adalah sistem operasi hibrida 16-bit/32-bit yang diproduksi oleh Microsoft. Windows 95 diperkenalkan ke publik pada tanggal 14 Agustus 1995, menyusul kampanye iklan yang agresif dari Microsoft.
+		img.big(src="images/windows95.png")
+
+	section
+		p Windows 95 diperkenalkan dengan menggunakan rancangan menu "Start", menu inovatif untuk mengakses grup program (pengganti Program Manager), selain itu juga diperkenalkan Windows Explorer sebagai pengganti File Manager, dukungan plug-and-play, dukungan program aplikasi MS-DOS dan Windows 16-bit dan Windows 32-bit, dan dukungan bagi nama-nama berkas (file) yang panjang, yang mendukung penamaanhingga 256 karakter, dan browser opsional Microsoft Internet Explorer.
+
+	section1
+		h2 Spesifikasi Minimum untuk instal Windows XP
 		ul
-			li Mempelajari cara menulis User Stories yang baik
-			li Menyusun BackLog dengan User Stories
-			li Menghubungkan User Stories dengan SCRUM
+			li Personal Komputer (PC) with a 386DX or higher processor (486 recommended). 
+			li 4 MB of Memory / RAM (8 MB recommended).
+			li VGA or higher resolution (256 color SVGA recommended).
+			li Hard disk (HDD) 35-40 MB (upgrade).
+			li HDD yang dibutuhkan untuk menginstall windows 95 pada sistem bersih adalah 50-55 MB.
+			li Floppy disk drive 3.5 inch.
+			li keyboard dan mouse yang kompatibel.
 
-	section
-		h2.bullet Apa itu User Stories?
+	section1
+		h2 Fitur Windows 95
 		ul
-			li User Stories merupakan sebuah cara pengumpulan kebutuhan user.
-			li User Stories menggambarkan fungsionalitas dari sebuah sistem/perangkat lunak.
-			li User Stories bisa menjadi tool testing untuk menentukan selesainya sebuah story.
-
-	section
-		h2.bullet Tiga aspek penting User Stories
+			li Sebuah antarmuka grafis yang didesain ulang (sangat berbeda dengan versi Windows 3.x), yakni desktop yang dapat dikonfigurasikan, adanya taskbar, tombol Start, dan menu konteks.
+			li Kompatibilitas dengan perangkat keras yang lama, serta aplikasi MS-DOS 16-bit serta Windows 16-bit.
+			li Arsitektur 32-bit untuk driver perangkat, yang disebut oleh Microsoft Virtual Device Driver (VxD).
+			li Fungsi multitasking yang ditingkatkan. Windows 95 menggunakan skema preemptive multitasking, menggantikan skemacooperative multitasking yang sebelumnya digunakan oleh Windows 3.x.
+			li Subsistem jaringan, subsistem disk, dan subsistem pencetakan yang berbasis 32-bit dan juga terintegrasi.
+			li Dukungan jaringan terintegrasi yang cukup luas, mencakup Microsoft Networking (NetBEUI), TCP/IP, NetWare (IPX/SPX),Banyan Vines; Windows Messaging untuk berkirim e-mail; Dial-up Networking untuk koneksi Remote Access Services (RAS) dan koneksi Internet.
+			
+	section1
+		h2 Fitur Windows 95
 		ul
-			li Sebuah deskripsi tertulis yang digunakan untuk perencanaan dan pengingat.
-			li Komunikasi mengenai cerita yang berfungsi untuk menerangkan detil dari cerita tersebut.
-			li Uji coba yang menjelaskan dan mendokumentasikan detil dan bisa digunakan untuk menentukan sebuah cerita telah selesai atau tidak.
-
-	section
-		h2.bullet Contoh User Story
-		hr
-		card.
-			Seorang User bisa posting resumenya ke website
-		hr
-		card.
-			Seorang User bisa hapus resumenya dari website
-
-	section
-		h2.bullet Contoh Pengujian User Story
-		h3.bullet Biasanya pengujian ditulis di belakang kartu cerita yang bersangkutan.
-		hr
-		card.
-			Uji dengan deskripsi kerja yang kosong
-		hr
-		card.
-			Uji dengan deskripsi kerja yang sangat panjang
-		hr
-		card.
-			Uji dengan gaji yang kosong
-		hr
-		card.
-			Uji dengan gaji 6 digit
-
-	section
-		h1.bullet Menulis cerita
-
-	section
-		h2.bullet Cerita yang bagus
-		hr
-		ul
-			li Independen
-			li Bisa dinegosiasi
-			li Berharga untuk kustomer
-			li Bisa diestimasi
-			li Kecil
-			li Bisa diuji
-
-	section
-		h2.bullet Independen
-		hr
-		ul
-			li Sebisa mungkin hilangkan depedensi antar cerita.
-			li Depedensi bisa menyebabkan masalah prioritisasi dan perencanaan.
-			li Depedensi menyebabkan cerita susah untuk diestimasi.
-	
-	section
-		h2.bullet Contoh User Story yang tidak independen
-		hr
-		card.
-			Perusahaan bisa membayar postingan kerja dengan Visa Card. 
-		hr
-		card.
-			Perusahaan bisa membayar postingan kerja dengan MasterCard.
-		hr
-		card.
-			Perusahaan bisa membayar postingan kerja dengan American Express Card.
-		hr
-
-	section
-		h2.bullet Bisa dinegosiasi
-		hr
-		ul
-			li Deskripsi dari cerita hanyalah sebuah deskripsi besar.
-			li Detil dari deskripsi haruslah bisa dinegosiasi.
-			li Tetapi jika ada detil yang penting, maka itu harus dituliskan langsung.
-		hr
-		card.
-			Sebuah perusahaan bisa membayar postingan kerja dengan kartu kredit.
-
-			Cttn: Menerima visa, mastercard, dan american express.
-
-	section
-		h2.bullet Berharga untuk kustomer
-		h3.bullet Gunakan bahasa yang familiar dengan kustomer.
-		hr
-		card.
-			Semua koneksi ke database haruslah melalui connection pool
-
-			Tidak dipahami user
-		hr
-		card.
-			Sebanyak 50 user harus bisa menggunakan aplikasi secara bersamaan.
-
-			Dipahami oleh user
-
-	section
-		h2.bullet Bisa Diestimasi
-		h3.bullet Tiga alasan sebuah cerita susah diestimasi
-		ol
-			li Programmer tidak memiliki pengetahuan akan bidang tersebut.
-			li Programmer kurang memiliki pengetahuan teknis.
-			li Cerita tersebut terlalu besar.
-		h3.bullet Solusi adalah:
-		ol
-			li Diskusikan dengan kustomer.
-			li Buat satu cerita "spike" untuk menjelajahi masalah teknis.
-			li Pecah cerita tersebut.
-
-	section
-		h2.bullet Kecil
-		hr
-		ul
-			li Cerita yang besar umumnya terbagi atas cerita gabungan atau cerita kompleks
-			li Cerita gabungan adalah cerita yang sebenarnya bisa dibagi-bagi menjadi lebih kecil
-			li Cerita kompleks adalah cerita yang terlalu kompleks dan besar untuk dibagi lagi.
-	
-	section
-		h2.bullet Contoh Cerita Besar
-		card.
-			User bisa menghitung laba rugi
-
-			Cerita gabungan karena bisa dibagi menjadi cerita lebih kecil
-		hr
-		card.
-			User bisa melakukan transaksi dengan banking secara real time
-
-			Cerita kompleks karena prosesnya sangat kompleks dan susah untuk dibagi.
-	
-	section
-		h2.bullet Bisa diuji
-		ul
-			li Cerita harus bisa diuji dan dibuktikan sudah selesai
-			li Cerita yang tidak bisa diuji maka tidak bisa dinyatakan selesai.
-		hr
-		card.
-			Aplikasi harus user friendly
-
-			Tidak bisa diuji
+			li Dukungan terhadap nama berkas panjang.
+			li Dukungan plug-and-play untuk mendeteksi instalasi perangkat keras dan konfigurasi terhadapnya secara otomatis.
+			li Dukungan Advanced Power Management (APM) untuk manajemen daya
+			li Dukungan multimedia (audio/video) terintegrasi.
+			li Dukungan terhadap manajemen secara terpusat dari server, seperti halnya group policy, dan user profil
+			
 
 include presentation-footer
 include main-footer
